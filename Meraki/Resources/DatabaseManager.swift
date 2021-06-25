@@ -222,7 +222,7 @@ public class DatabaseManager {
             return
         }
         
-        userDatabase.child(currentUserUid).updateChildValues(["firstName": newFirst, "lastName": newLast])
+        userDatabase.child(currentUserUid).updateChildValues(["firstName": newFirst, "lastName": newLast, "firstNameLower": newFirst.lowercased(), "lastNameLower": newLast.lowercased()])
         
     }
     
