@@ -20,7 +20,6 @@
 		8573079C2685731E00B0B424 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857307592685731D00B0B424 /* RegisterViewController.swift */; };
 		8573079D2685731E00B0B424 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573075C2685731D00B0B424 /* PostTableViewCell.swift */; };
 		8573079E2685731E00B0B424 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8573075D2685731D00B0B424 /* PostTableViewCell.xib */; };
-		8573079F2685731E00B0B424 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573075E2685731D00B0B424 /* LoadingCell.swift */; };
 		857307A02685731E00B0B424 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573075F2685731D00B0B424 /* CommentTableViewCell.swift */; };
 		857307A12685731E00B0B424 /* SelfCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857307602685731D00B0B424 /* SelfCommentTableViewCell.xib */; };
 		857307A22685731E00B0B424 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857307612685731D00B0B424 /* CommentTableViewCell.xib */; };
@@ -80,7 +79,6 @@
 		857307592685731D00B0B424 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8573075C2685731D00B0B424 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		8573075D2685731D00B0B424 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
-		8573075E2685731D00B0B424 /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 		8573075F2685731D00B0B424 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		857307602685731D00B0B424 /* SelfCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelfCommentTableViewCell.xib; sourceTree = "<group>"; };
 		857307612685731D00B0B424 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
@@ -232,7 +230,6 @@
 			children = (
 				8573075C2685731D00B0B424 /* PostTableViewCell.swift */,
 				8573075D2685731D00B0B424 /* PostTableViewCell.xib */,
-				8573075E2685731D00B0B424 /* LoadingCell.swift */,
 			);
 			path = "Post Cell";
 			sourceTree = "<group>";
@@ -506,7 +503,6 @@
 				857307A72685731E00B0B424 /* AboutUserTableViewCell.swift in Sources */,
 				857307BE2685731E00B0B424 /* AuthManager.swift in Sources */,
 				857307C02685731E00B0B424 /* DatabaseManager.swift in Sources */,
-				8573079F2685731E00B0B424 /* LoadingCell.swift in Sources */,
 				857307AB2685731E00B0B424 /* HomeViewController.swift in Sources */,
 				857307972685731E00B0B424 /* Opportunity.swift in Sources */,
 				857307A62685731E00B0B424 /* userResultsTableViewCell.swift in Sources */,

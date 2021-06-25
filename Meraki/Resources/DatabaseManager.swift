@@ -327,6 +327,33 @@ public class DatabaseManager {
         }
     }
     
+    var queryPostsByTime: DatabaseQuery {
+        var postQueryRef: DatabaseQuery
+        
+        postQueryRef = postDatabase.queryOrdered(byChild: "timestamp")
+        return postQueryRef
+    }
+    
+    public func arrayOfPostByTime(completion: @escaping (_ opportunities: [Post])->()) {
+        queryPostsByTime.observeSingleEvent(of: .value) { (snapshot) in
+            var posts = [Post]()
+            var numOfChildThroughFor = 0
+            for child in snapshot.children {
+                if let childSnapshot = child as? DataSnapshot {
+                    if let data = childSnapshot.value as? [String:Any]{
+                        Post.parse(key: childSnapshot.key, data: data) { (post) in
+                            numOfChildThroughFor += 1
+                            posts.insert(post, at: 0)
+                            if numOfChildThroughFor == snapshot.childrenCount {
+                                return completion(posts)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     
     //query users that start with a specific string
     public func queryUsers(searchTerm: String, completion: @escaping (_ searchUserResults: [UserProfile])->()){
