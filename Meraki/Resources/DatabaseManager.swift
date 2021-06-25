@@ -217,6 +217,7 @@ public class DatabaseManager {
     }
 
     
+    
     public func changeFirstLastNameUser(newFirst:String, newLast:String){
         guard let currentUserUid = UserProfile.currentUserProfile?.uid else {
             return

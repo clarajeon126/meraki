@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851B38A42685852E006F4A37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B38A32685852E006F4A37 /* HomeViewController.swift */; };
 		857306CA2685726200B0B424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 857306C22685726200B0B424 /* GoogleService-Info.plist */; };
 		857307932685731E00B0B424 /* PostWithUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573074E2685731C00B0B424 /* PostWithUIImage.swift */; };
 		857307942685731E00B0B424 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573074F2685731C00B0B424 /* Comment.swift */; };
@@ -31,7 +32,6 @@
 		857307A82685731E00B0B424 /* AboutUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8573076A2685731D00B0B424 /* AboutUserTableViewCell.xib */; };
 		857307A92685731E00B0B424 /* SelfCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573076B2685731D00B0B424 /* SelfCommentTableViewCell.swift */; };
 		857307AA2685731E00B0B424 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573076D2685731D00B0B424 /* DiscoverViewController.swift */; };
-		857307AB2685731E00B0B424 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573076E2685731D00B0B424 /* HomeViewController.swift */; };
 		857307AC2685731E00B0B424 /* OpportunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573076F2685731D00B0B424 /* OpportunityViewController.swift */; };
 		857307AD2685731E00B0B424 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857307702685731D00B0B424 /* TabBarViewController.swift */; };
 		857307AE2685731E00B0B424 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857307712685731D00B0B424 /* ProfileViewController.swift */; };
@@ -64,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		3A83BE3764FBDFC6A1ECB29A /* Pods-Meraki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meraki.debug.xcconfig"; path = "Target Support Files/Pods-Meraki/Pods-Meraki.debug.xcconfig"; sourceTree = "<group>"; };
+		851B38A32685852E006F4A37 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		857306A326856B4E00B0B424 /* Meraki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meraki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857306B426856B5000B0B424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		857306C22685726200B0B424 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		8573076A2685731D00B0B424 /* AboutUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUserTableViewCell.xib; sourceTree = "<group>"; };
 		8573076B2685731D00B0B424 /* SelfCommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfCommentTableViewCell.swift; sourceTree = "<group>"; };
 		8573076D2685731D00B0B424 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
-		8573076E2685731D00B0B424 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8573076F2685731D00B0B424 /* OpportunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpportunityViewController.swift; sourceTree = "<group>"; };
 		857307702685731D00B0B424 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		857307712685731D00B0B424 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -265,8 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				8573076D2685731D00B0B424 /* DiscoverViewController.swift */,
-				8573076E2685731D00B0B424 /* HomeViewController.swift */,
 				8573076F2685731D00B0B424 /* OpportunityViewController.swift */,
+				851B38A32685852E006F4A37 /* HomeViewController.swift */,
 				857307702685731D00B0B424 /* TabBarViewController.swift */,
 				857307712685731D00B0B424 /* ProfileViewController.swift */,
 				857307722685731D00B0B424 /* SubViewControllers */,
@@ -503,7 +503,6 @@
 				857307A72685731E00B0B424 /* AboutUserTableViewCell.swift in Sources */,
 				857307BE2685731E00B0B424 /* AuthManager.swift in Sources */,
 				857307C02685731E00B0B424 /* DatabaseManager.swift in Sources */,
-				857307AB2685731E00B0B424 /* HomeViewController.swift in Sources */,
 				857307972685731E00B0B424 /* Opportunity.swift in Sources */,
 				857307A62685731E00B0B424 /* userResultsTableViewCell.swift in Sources */,
 				857307AD2685731E00B0B424 /* TabBarViewController.swift in Sources */,
@@ -519,6 +518,7 @@
 				857307942685731E00B0B424 /* Comment.swift in Sources */,
 				8573079D2685731E00B0B424 /* PostTableViewCell.swift in Sources */,
 				857307A32685731E00B0B424 /* OpportunitiesCollectionViewCell.swift in Sources */,
+				851B38A42685852E006F4A37 /* HomeViewController.swift in Sources */,
 				857307BB2685731E00B0B424 /* StorageManager.swift in Sources */,
 				857307AE2685731E00B0B424 /* ProfileViewController.swift in Sources */,
 				857307B72685731E00B0B424 /* SettingsViewController.swift in Sources */,

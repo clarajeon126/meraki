@@ -4,6 +4,7 @@
 //
 //  Created by Clara Jeon on 1/27/21.
 //
+
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
@@ -20,6 +21,36 @@ class HomeViewController: UIViewController {
     
     var refreshControl:UIRefreshControl!
     
+    var postsRef:DatabaseReference {
+        return Database.database().reference().child("posts")
+    }
+    
+    var oldPostsQuery:DatabaseQuery {
+        print("in old post query")
+        var queryRef:DatabaseQuery
+        let lastPost = posts.last
+        if lastPost != nil {
+            let lastTimestamp = lastPost!.createdAt.timeIntervalSince1970 * 1000
+            queryRef = postsRef.queryOrdered(byChild: "timestamp").queryEnding(atValue: lastTimestamp)
+        } else {
+            queryRef = postsRef.queryOrdered(byChild: "timestamp")
+        }
+        return queryRef
+    }
+    
+    var newPostsQuery:DatabaseQuery {
+        var queryRef:DatabaseQuery
+        let firstPost = posts.first
+        if firstPost != nil {
+            let firstTimestamp = firstPost!.createdAt.timeIntervalSince1970 * 1000
+            print("in new post query")
+            queryRef = postsRef.queryOrdered(byChild: "timestamp").queryStarting(atValue: firstTimestamp)
+        } else {
+            queryRef = postsRef.queryOrdered(byChild: "timestamp")
+        }
+        return queryRef
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -118,3 +149,4 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
+
