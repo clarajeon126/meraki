@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		851B38A42685852E006F4A37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B38A32685852E006F4A37 /* HomeViewController.swift */; };
+		851B38A626861296006F4A37 /* KommunicateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851B38A526861296006F4A37 /* KommunicateManager.swift */; };
 		857306CA2685726200B0B424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 857306C22685726200B0B424 /* GoogleService-Info.plist */; };
 		857307932685731E00B0B424 /* PostWithUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573074E2685731C00B0B424 /* PostWithUIImage.swift */; };
 		857307942685731E00B0B424 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8573074F2685731C00B0B424 /* Comment.swift */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		3A83BE3764FBDFC6A1ECB29A /* Pods-Meraki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meraki.debug.xcconfig"; path = "Target Support Files/Pods-Meraki/Pods-Meraki.debug.xcconfig"; sourceTree = "<group>"; };
 		851B38A32685852E006F4A37 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		851B38A526861296006F4A37 /* KommunicateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KommunicateManager.swift; sourceTree = "<group>"; };
 		857306A326856B4E00B0B424 /* Meraki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meraki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857306B426856B5000B0B424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		857306C22685726200B0B424 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				857307842685731E00B0B424 /* StorageManager.swift */,
+				851B38A526861296006F4A37 /* KommunicateManager.swift */,
 				857307852685731E00B0B424 /* Extensions.swift */,
 				857307872685731E00B0B424 /* AuthManager.swift */,
 				857307882685731E00B0B424 /* AppDelegate.swift */,
@@ -518,6 +521,7 @@
 				857307942685731E00B0B424 /* Comment.swift in Sources */,
 				8573079D2685731E00B0B424 /* PostTableViewCell.swift in Sources */,
 				857307A32685731E00B0B424 /* OpportunitiesCollectionViewCell.swift in Sources */,
+				851B38A626861296006F4A37 /* KommunicateManager.swift in Sources */,
 				851B38A42685852E006F4A37 /* HomeViewController.swift in Sources */,
 				857307BB2685731E00B0B424 /* StorageManager.swift in Sources */,
 				857307AE2685731E00B0B424 /* ProfileViewController.swift in Sources */,

@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import GoogleSignIn
+import Kommunicate
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         //For google sign in
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+        Kommunicate.setup(applicationId: "168b157c6261ba66ce468994213834b28")
         
         return true
     }

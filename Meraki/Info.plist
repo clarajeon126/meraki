@@ -39,6 +39,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>allows camera</string>
+	<key>NSContactsUsageDescription</key>
+	<string>allows contacts</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>allows location</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>allows microphone</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>allows write access</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>allows photos</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

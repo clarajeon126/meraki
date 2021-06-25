@@ -45,6 +45,9 @@ class OpportunityViewController: UIViewController {
         }
         refreshControl.endRefreshing()
     }
+    @IBAction func botTapped(_ sender: Any) {
+        KommunicateManager.shared.openBotChat(vc: self)
+    }
     
     static func createLayout() -> UICollectionViewCompositionalLayout {
         //items

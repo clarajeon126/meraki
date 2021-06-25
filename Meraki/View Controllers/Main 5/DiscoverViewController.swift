@@ -33,6 +33,11 @@ class DiscoverViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func botTapped(_ sender: Any) {
+        KommunicateManager.shared.openBotChat(vc: self)
+    }
+    
     @IBOutlet weak var postTableView: UITableView!
     @IBOutlet weak var opportunityResultCollectionView: UICollectionView!
     @IBOutlet weak var searchLabel: UILabel!

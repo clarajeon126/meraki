@@ -46,6 +46,10 @@ class ProfileViewController: UIViewController {
             aboutView.isHidden = true
         }
     }
+    @IBAction func botTapped(_ sender: Any) {
+        KommunicateManager.shared.openBotChat(vc: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

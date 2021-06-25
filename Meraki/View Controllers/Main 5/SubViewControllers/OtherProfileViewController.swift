@@ -131,7 +131,7 @@ extension OtherProfileViewController: UITableViewDelegate, UITableViewDataSource
             return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            performSegue(withIdentifier: "myPostInDetailSegue", sender: self)
+            performSegue(withIdentifier: "otherUserToPost", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

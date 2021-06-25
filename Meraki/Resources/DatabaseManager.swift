@@ -382,33 +382,33 @@ public class DatabaseManager {
                         UserProfile.parse(data: data) { (userProfile) in
                             numOfChildThroughFor += 1
                             searchUserResults.insert(userProfile, at: 0)
-                            
-                        }
-                    }
-                }
-            }
-        }
-        
-        queryWithTermUserLast.observeSingleEvent(of: .value) { (snapshot) in
-            var numOfChildThroughFor = 0
-            if snapshot.childrenCount == 0 {
-                return completion(searchUserResults)
-            }
-            
-            for child in snapshot.children {
-                if let childSnapshot = child as? DataSnapshot {
-                    if let data = childSnapshot.value as? [String:Any]{
-                        UserProfile.parse(data: data) { (userProfile) in
-                            numOfChildThroughFor += 1
-                            searchUserResults.insert(userProfile, at: 0)
-                            if numOfChildThroughFor == snapshot.childrenCount {
-                                return completion(searchUserResults)
+                            queryWithTermUserLast.observeSingleEvent(of: .value) { (snapshot) in
+                                var numOfChildThroughFor = 0
+                                if snapshot.childrenCount == 0 {
+                                    return completion(searchUserResults)
+                                }
+                                
+                                for child in snapshot.children {
+                                    if let childSnapshot = child as? DataSnapshot {
+                                        if let data = childSnapshot.value as? [String:Any]{
+                                            UserProfile.parse(data: data) { (userProfile) in
+                                                numOfChildThroughFor += 1
+                                                searchUserResults.insert(userProfile, at: 0)
+                                                if numOfChildThroughFor == snapshot.childrenCount {
+                                                    return completion(searchUserResults)
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
         }
+        
+        
         
     }
     

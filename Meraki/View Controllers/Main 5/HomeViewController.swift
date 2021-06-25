@@ -44,6 +44,9 @@ class HomeViewController: UIViewController {
         
         
     }
+    @IBAction func botTapped(_ sender: Any) {
+        KommunicateManager.shared.openBotChat(vc: self)
+    }
     
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
@@ -78,7 +81,7 @@ class HomeViewController: UIViewController {
             print("elseobserve\(Auth.auth().currentUser!.uid)")
             DatabaseManager.shared.observeUserProfile(Auth.auth().currentUser!.uid) { (userProfile) in
                 UserProfile.currentUserProfile = userProfile
-                
+                KommunicateManager.shared.registerUser()
             }
         }
     }

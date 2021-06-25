@@ -17,6 +17,12 @@ class OpportunityDepthViewController: UIViewController {
     @IBOutlet weak var subTitle: UILabel!
     @IBOutlet weak var basicInfo: UILabel!
     
+    @IBAction func sharePostButtonTapped(_ sender: Any) {
+        let activityController = UIActivityViewController(activityItems: [basicInfo.text, imageView.image], applicationActivities: nil)
+        
+        present(activityController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
