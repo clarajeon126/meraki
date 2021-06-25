@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="opportunityCell" id="gTV-IL-0wX" customClass="OpportunitiesCollectionViewCell" customModule="Meraki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VV-nm-Okm">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iMq-ha-P14">
+                                <rect key="frame" x="10" y="300" width="390" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art Portofolio Advice Workshop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Iz-QU-WXv">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l92-Nb-tGk">
+                                        <rect key="frame" x="0.0" y="40" width="390" height="60"/>
+                                        <string key="text">Get professional help from the art industry's top leaders. From your first sentence to your last artpiece, be confident in your work</string>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1Iz-QU-WXv" firstAttribute="height" secondItem="iMq-ha-P14" secondAttribute="height" multiplier="0.4" id="NTW-Po-4qC"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KCA-jc-a5W">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlK-Ee-Fqm">
+                                <rect key="frame" x="379" y="5" width="16" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91318783849999996" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iMq-ha-P14" secondAttribute="trailing" id="6bX-cq-Kw9"/>
+                            <constraint firstAttribute="trailing" secondItem="BlK-Ee-Fqm" secondAttribute="trailing" constant="5" id="8U7-oj-QsB"/>
+                            <constraint firstItem="BlK-Ee-Fqm" firstAttribute="top" secondItem="5VV-nm-Okm" secondAttribute="top" constant="5" id="BRK-Wx-KII"/>
+                            <constraint firstAttribute="trailing" secondItem="KCA-jc-a5W" secondAttribute="trailing" id="Drf-Bd-f7W"/>
+                            <constraint firstItem="iMq-ha-P14" firstAttribute="height" secondItem="5VV-nm-Okm" secondAttribute="height" multiplier="0.25" id="Ge5-K1-6bi"/>
+                            <constraint firstItem="iMq-ha-P14" firstAttribute="leading" secondItem="5VV-nm-Okm" secondAttribute="leading" constant="10" id="S1k-gL-I7Q"/>
+                            <constraint firstItem="KCA-jc-a5W" firstAttribute="top" secondItem="5VV-nm-Okm" secondAttribute="top" id="ZDX-Mp-Y8b"/>
+                            <constraint firstAttribute="bottom" secondItem="iMq-ha-P14" secondAttribute="bottom" id="fB3-zv-oqE"/>
+                            <constraint firstItem="KCA-jc-a5W" firstAttribute="leading" secondItem="5VV-nm-Okm" secondAttribute="leading" id="iB7-uJ-oAi"/>
+                            <constraint firstItem="KCA-jc-a5W" firstAttribute="height" secondItem="5VV-nm-Okm" secondAttribute="height" multiplier="0.75" id="iuT-zJ-psu"/>
+                            <constraint firstAttribute="width" secondItem="5VV-nm-Okm" secondAttribute="height" id="vm9-C7-zQv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5VV-nm-Okm" secondAttribute="trailing" id="How-gl-Zha"/>
+                <constraint firstItem="5VV-nm-Okm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nst-PT-Sln"/>
+                <constraint firstAttribute="bottom" secondItem="5VV-nm-Okm" secondAttribute="bottom" id="W0F-rg-GD5"/>
+                <constraint firstItem="5VV-nm-Okm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gID-Ab-d3D"/>
+            </constraints>
+            <size key="customSize" width="400" height="400"/>
+            <connections>
+                <outlet property="category" destination="BlK-Ee-Fqm" id="HXW-yi-UAE"/>
+                <outlet property="imageView" destination="KCA-jc-a5W" id="lRn-yf-Xxy"/>
+                <outlet property="mainTitle" destination="1Iz-QU-WXv" id="lCQ-qf-Z05"/>
+                <outlet property="mainView" destination="5VV-nm-Okm" id="GRF-3G-HVu"/>
+                <outlet property="subTitle" destination="l92-Nb-tGk" id="cTK-PT-rhz"/>
+            </connections>
+            <point key="canvasLocation" x="204.34782608695653" y="222.99107142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

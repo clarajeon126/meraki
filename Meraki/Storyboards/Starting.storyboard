@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="m9x-FB-MuC">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E3M-Nb-3uE" customClass="LoginViewController" customModule="Meraki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TDQ-5m-PMk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ekj-2r-pUv">
+                                <rect key="frame" x="-243" y="34" width="900" height="179"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created for FBLA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2A-aY-OQH">
+                                <rect key="frame" x="151" y="811" width="112.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rFa-iO-bj2">
+                                <rect key="frame" x="83" y="280" width="248" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Vz-dF-i5r">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="40"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="tqp-Ga-NAr">
+                                        <rect key="frame" x="0.0" y="50" width="248" height="40"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mwo-Jz-Op8">
+                                <rect key="frame" x="83" y="476.5" width="248" height="98.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOt-HE-CNu" customClass="GIDSignInButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="44"/>
+                                        <color key="backgroundColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYE-FR-9NU">
+                                        <rect key="frame" x="0.0" y="54" width="248" height="44.5"/>
+                                        <color key="backgroundColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ajd-8T-Jk7">
+                                <rect key="frame" x="83" y="585" width="248" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxl-nY-WU9">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfZ-nF-rWT">
+                                        <rect key="frame" x="156.5" y="0.0" width="91.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <state key="normal" title="Create One">
+                                            <color key="titleColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fGD-eE-kgW" kind="presentation" id="UGd-wG-27p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="— or —" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJP-V2-ht7">
+                                <rect key="frame" x="180.5" y="434.5" width="53.5" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.36920891610000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meraki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07G-2r-KXc">
+                                <rect key="frame" x="0.0" y="213" width="414" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ff-4h-Ayb">
+                                <rect key="frame" x="114" y="380" width="186" height="39.5"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.96862745100000003" green="1" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButton:" destination="E3M-Nb-3uE" eventType="touchUpInside" id="bQ0-zz-VVm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvh-Ho-eal">
+                                <rect key="frame" x="167" y="832" width="81" height="30"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                <state key="normal" title="Copyrights">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ail-b6-Oyg" kind="presentation" id="Fex-TN-2Ze"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fKQ-4i-eNl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UfZ-nF-rWT" firstAttribute="height" secondItem="TDQ-5m-PMk" secondAttribute="height" multiplier="0.0323661" id="0f5-bF-Gia"/>
+                            <constraint firstItem="07G-2r-KXc" firstAttribute="leading" secondItem="fKQ-4i-eNl" secondAttribute="leading" id="1PP-hj-RS3"/>
+                            <constraint firstItem="bJP-V2-ht7" firstAttribute="centerY" secondItem="TDQ-5m-PMk" secondAttribute="centerY" id="2Kx-Hm-5bl"/>
+                            <constraint firstItem="rvh-Ho-eal" firstAttribute="bottom" secondItem="fKQ-4i-eNl" secondAttribute="bottom" id="3Zu-5S-bnG"/>
+                            <constraint firstItem="bJP-V2-ht7" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="61h-uN-PBN"/>
+                            <constraint firstItem="rFa-iO-bj2" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="85f-7K-XMm"/>
+                            <constraint firstItem="rvh-Ho-eal" firstAttribute="width" secondItem="TDQ-5m-PMk" secondAttribute="width" multiplier="0.2" id="CKp-5m-uRA"/>
+                            <constraint firstItem="bJP-V2-ht7" firstAttribute="top" secondItem="2ff-4h-Ayb" secondAttribute="bottom" constant="15" id="DU7-8J-qMc"/>
+                            <constraint firstItem="07G-2r-KXc" firstAttribute="top" secondItem="Ekj-2r-pUv" secondAttribute="bottom" id="DnO-nj-ANH"/>
+                            <constraint firstItem="2ff-4h-Ayb" firstAttribute="top" secondItem="rFa-iO-bj2" secondAttribute="bottom" constant="10" id="Hmn-HO-hSP"/>
+                            <constraint firstItem="rFa-iO-bj2" firstAttribute="height" secondItem="TDQ-5m-PMk" secondAttribute="height" multiplier="0.1" id="KSB-YH-J3n"/>
+                            <constraint firstItem="rvh-Ho-eal" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="KZt-Hu-Zd3"/>
+                            <constraint firstItem="mwo-Jz-Op8" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="M6m-vx-gTC"/>
+                            <constraint firstItem="bJP-V2-ht7" firstAttribute="height" secondItem="TDQ-5m-PMk" secondAttribute="height" multiplier="0.03" id="P8V-Ps-tYQ"/>
+                            <constraint firstItem="mwo-Jz-Op8" firstAttribute="width" secondItem="TDQ-5m-PMk" secondAttribute="width" multiplier="0.6" id="PtA-9n-kbk"/>
+                            <constraint firstItem="Ajd-8T-Jk7" firstAttribute="top" secondItem="mwo-Jz-Op8" secondAttribute="bottom" constant="10" id="Rhq-xg-oNH"/>
+                            <constraint firstItem="mwo-Jz-Op8" firstAttribute="top" secondItem="bJP-V2-ht7" secondAttribute="bottom" constant="15" id="Rms-cW-bA6"/>
+                            <constraint firstItem="Ajd-8T-Jk7" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="SiB-YW-QMR"/>
+                            <constraint firstItem="2ff-4h-Ayb" firstAttribute="height" secondItem="tqp-Ga-NAr" secondAttribute="height" id="aeh-iW-MjD"/>
+                            <constraint firstItem="Ekj-2r-pUv" firstAttribute="top" secondItem="fKQ-4i-eNl" secondAttribute="top" constant="-10" id="b7e-vx-MTS"/>
+                            <constraint firstItem="rvh-Ho-eal" firstAttribute="top" secondItem="n2A-aY-OQH" secondAttribute="bottom" constant="3" id="bAx-Rm-R5K"/>
+                            <constraint firstItem="Ekj-2r-pUv" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="bWA-4O-mEw"/>
+                            <constraint firstItem="Ekj-2r-pUv" firstAttribute="height" secondItem="TDQ-5m-PMk" secondAttribute="height" multiplier="0.2" id="ex1-Cl-9lz"/>
+                            <constraint firstItem="07G-2r-KXc" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="fqy-2U-95p"/>
+                            <constraint firstItem="2ff-4h-Ayb" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="gfX-6K-Iz2"/>
+                            <constraint firstItem="n2A-aY-OQH" firstAttribute="centerX" secondItem="TDQ-5m-PMk" secondAttribute="centerX" id="hMK-im-7eB"/>
+                            <constraint firstItem="2ff-4h-Ayb" firstAttribute="height" secondItem="gOt-HE-CNu" secondAttribute="height" multiplier="0.9" id="iRG-Hc-5cV"/>
+                            <constraint firstItem="2ff-4h-Ayb" firstAttribute="width" secondItem="rFa-iO-bj2" secondAttribute="width" multiplier="0.75" id="q4y-V1-89s"/>
+                            <constraint firstItem="Ajd-8T-Jk7" firstAttribute="width" secondItem="TDQ-5m-PMk" secondAttribute="width" multiplier="0.6" id="wit-em-ADr"/>
+                            <constraint firstItem="fKQ-4i-eNl" firstAttribute="trailing" secondItem="07G-2r-KXc" secondAttribute="trailing" id="yy6-e5-1mD"/>
+                            <constraint firstItem="rFa-iO-bj2" firstAttribute="width" secondItem="TDQ-5m-PMk" secondAttribute="width" multiplier="0.6" id="zNQ-XI-j92"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordField" destination="tqp-Ga-NAr" id="sue-IV-tu5"/>
+                        <outlet property="usernameOrEmail" destination="2Vz-dF-i5r" id="Tcn-7Y-YZw"/>
+                        <segue destination="LGO-PB-LZM" kind="presentation" identifier="loginToMain" animates="NO" modalPresentationStyle="fullScreen" id="TLD-7y-XMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53h-1v-3KQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="-1211.3839285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vmv-8g-ZaT">
+            <objects>
+                <viewController storyboardIdentifier="creditsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ail-b6-Oyg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJ9-sY-T5f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vr-1Z-1K3">
+                                <rect key="frame" x="168" y="10" width="78" height="29.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhV-AL-5nL">
+                                <rect key="frame" x="10" y="59.5" width="394" height="199.5"/>
+                                <mutableString key="text">Hello! Welcome to Meraki. As you explore this social media app created for Women in STEM, I hope I was able to show you the possibilities for the STEM industry through my mobile application development skills. Meraki means to put your soul, your passion, a piece of you into whatever you do. All these women in STEM including me put our souls into what we do, and this app is created to acknowledge and congratulate these people.</mutableString>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDP-rG-V2W">
+                                <rect key="frame" x="10" y="289" width="394" height="139.5"/>
+                                <string key="text">All images used as examples are from Adobe Stock.  Firebase and its database, storage, and authorization resources were used to store and update data in this app.  The font is roboto and was used from Google Fonts.</string>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart logo" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-DM-6Ud">
+                                <rect key="frame" x="83" y="458.5" width="248" height="248.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NaG-DM-6Ud" secondAttribute="height" id="5uz-8T-WZm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meraki" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhq-pS-zPc">
+                                <rect key="frame" x="132.5" y="717" width="149" height="59"/>
+                                <color key="tintColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="50"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c71-BI-o8P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zhq-pS-zPc" firstAttribute="centerX" secondItem="fJ9-sY-T5f" secondAttribute="centerX" id="0ue-gt-jTG"/>
+                            <constraint firstItem="NaG-DM-6Ud" firstAttribute="centerX" secondItem="fJ9-sY-T5f" secondAttribute="centerX" id="2kn-ZN-6Cn"/>
+                            <constraint firstItem="zhq-pS-zPc" firstAttribute="top" secondItem="NaG-DM-6Ud" secondAttribute="bottom" constant="10" id="80t-CW-sBM"/>
+                            <constraint firstItem="NaG-DM-6Ud" firstAttribute="width" secondItem="fJ9-sY-T5f" secondAttribute="width" multiplier="0.6" id="Kry-Dj-lV6"/>
+                            <constraint firstItem="NaG-DM-6Ud" firstAttribute="top" secondItem="gDP-rG-V2W" secondAttribute="bottom" constant="30" id="Nbr-xb-W32"/>
+                            <constraint firstItem="BhV-AL-5nL" firstAttribute="leading" secondItem="c71-BI-o8P" secondAttribute="leading" constant="10" id="XQc-AJ-qDg"/>
+                            <constraint firstItem="c71-BI-o8P" firstAttribute="trailing" secondItem="gDP-rG-V2W" secondAttribute="trailing" constant="10" id="akk-yD-sqd"/>
+                            <constraint firstItem="gDP-rG-V2W" firstAttribute="leading" secondItem="c71-BI-o8P" secondAttribute="leading" constant="10" id="bop-l9-n0B"/>
+                            <constraint firstItem="2vr-1Z-1K3" firstAttribute="centerX" secondItem="fJ9-sY-T5f" secondAttribute="centerX" id="cmy-Rw-nv1"/>
+                            <constraint firstItem="gDP-rG-V2W" firstAttribute="top" secondItem="BhV-AL-5nL" secondAttribute="bottom" constant="30" id="hVo-fj-bK5"/>
+                            <constraint firstItem="2vr-1Z-1K3" firstAttribute="top" secondItem="c71-BI-o8P" secondAttribute="top" constant="10" id="mf5-Ds-xhf"/>
+                            <constraint firstAttribute="trailing" secondItem="BhV-AL-5nL" secondAttribute="trailing" constant="10" id="sB1-VH-G1j"/>
+                            <constraint firstItem="BhV-AL-5nL" firstAttribute="top" secondItem="2vr-1Z-1K3" secondAttribute="bottom" constant="20" id="y3m-Af-TgO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETV-Hd-H4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="-465"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="bCL-hh-PYl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="LGO-PB-LZM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ke-OJ-ipb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="-794"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="Q7c-mV-dzu">
+            <objects>
+                <viewController id="fGD-eE-kgW" customClass="RegisterViewController" customModule="Meraki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zOP-zr-JJ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart logo" translatesAutoresizingMaskIntoConstraints="NO" id="zN5-sh-dKw">
+                                <rect key="frame" x="-243" y="0.0" width="900" height="177"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meraki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cho-5d-Twi">
+                                <rect key="frame" x="0.0" y="177" width="414" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-4L-jeU">
+                                <rect key="frame" x="83" y="282.5" width="248" height="252.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="SuQ-Wt-gwQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-JE-VX7">
+                                        <rect key="frame" x="0.0" y="52.5" width="248" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aFw-f8-29k">
+                                        <rect key="frame" x="0.0" y="105" width="248" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="hIY-OU-Uh4">
+                                        <rect key="frame" x="0.0" y="157.5" width="248" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="RPq-B4-Vcb">
+                                        <rect key="frame" x="0.0" y="210" width="248" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdY-jA-HAT">
+                                <rect key="frame" x="114" y="555" width="186" height="42.5"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.22352941179999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                <state key="normal" title="Create an Account">
+                                    <color key="titleColor" red="0.96862745100000003" green="1" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountButtonTapped:" destination="fGD-eE-kgW" eventType="touchUpInside" id="hPo-Tf-is5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SyN-F3-eCL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ihe-4L-jeU" firstAttribute="height" secondItem="zOP-zr-JJ4" secondAttribute="height" multiplier="0.3" id="4uG-FI-Cnk"/>
+                            <constraint firstItem="Ihe-4L-jeU" firstAttribute="top" secondItem="cho-5d-Twi" secondAttribute="bottom" constant="70" id="9Rb-1a-khv"/>
+                            <constraint firstItem="cho-5d-Twi" firstAttribute="top" secondItem="zN5-sh-dKw" secondAttribute="bottom" id="FUr-sp-iI1"/>
+                            <constraint firstItem="ZdY-jA-HAT" firstAttribute="width" secondItem="Ihe-4L-jeU" secondAttribute="width" multiplier="0.75" id="GXo-V5-3b1"/>
+                            <constraint firstItem="zN5-sh-dKw" firstAttribute="height" secondItem="zOP-zr-JJ4" secondAttribute="height" multiplier="0.21" id="GmJ-yf-fxB"/>
+                            <constraint firstItem="zN5-sh-dKw" firstAttribute="centerX" secondItem="zOP-zr-JJ4" secondAttribute="centerX" id="H6D-Vq-NI5"/>
+                            <constraint firstItem="zN5-sh-dKw" firstAttribute="top" secondItem="SyN-F3-eCL" secondAttribute="top" id="Qt2-mj-MVj"/>
+                            <constraint firstItem="ZdY-jA-HAT" firstAttribute="centerX" secondItem="zOP-zr-JJ4" secondAttribute="centerX" id="V3C-rH-CHS"/>
+                            <constraint firstItem="cho-5d-Twi" firstAttribute="leading" secondItem="SyN-F3-eCL" secondAttribute="leading" id="ZBA-JK-cS9"/>
+                            <constraint firstItem="Ihe-4L-jeU" firstAttribute="centerX" secondItem="zOP-zr-JJ4" secondAttribute="centerX" id="cUP-4N-aAL"/>
+                            <constraint firstItem="ZdY-jA-HAT" firstAttribute="top" secondItem="Ihe-4L-jeU" secondAttribute="bottom" constant="20" id="ebV-J8-Or3"/>
+                            <constraint firstItem="Ihe-4L-jeU" firstAttribute="width" secondItem="zOP-zr-JJ4" secondAttribute="width" multiplier="0.6" id="hnt-9B-kFT"/>
+                            <constraint firstItem="ZdY-jA-HAT" firstAttribute="height" secondItem="RPq-B4-Vcb" secondAttribute="height" id="mVK-nE-IxB"/>
+                            <constraint firstItem="cho-5d-Twi" firstAttribute="trailing" secondItem="SyN-F3-eCL" secondAttribute="trailing" id="sfs-ta-EQj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="hIY-OU-Uh4" id="fAt-rN-nsB"/>
+                        <outlet property="firstNameField" destination="SuQ-Wt-gwQ" id="Qmd-Fv-Eie"/>
+                        <outlet property="lastNameField" destination="Ofm-JE-VX7" id="OHk-Rv-PUL"/>
+                        <outlet property="passwordField" destination="RPq-B4-Vcb" id="bjl-xl-A5m"/>
+                        <outlet property="usernameField" destination="aFw-f8-29k" id="ZHE-Bc-nJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXy-ec-tN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="-1211"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart logo" width="900" height="900"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
